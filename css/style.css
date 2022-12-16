@@ -34,6 +34,8 @@ a {
     color: white;
     border: 1px solid transparent;
     border-radius: .25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
 }
 
 .btn-big {
@@ -58,6 +60,26 @@ a {
     font-size: 1.2em;
     text-align: right;
     font-family: 'Lora', serif;
+}
+
+.msg {
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success {
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    background: #bcf5bc;
+}
+
+.error {
+    color: #884b4b;
+    border: 1px solid #884b4b;
+    background: #f5bcbc;
 }
 
 /* NAVBAR */
@@ -211,11 +233,26 @@ header .menu-toggle {
     width: 90%;
     margin: 30px auto 30px;
     text-align: right;
+    border: 1px solid red;
 }
 
 .content .main-content {
     width: 70%;
     float: right;
+    border: 1px solid blue;
+}
+
+.content .main-content.single {
+    background: white;
+    padding: 20px 50px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-top: 8px; 
+}
+
+.content .main-content.single .post-title {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .content .main-content .post {
@@ -225,6 +262,19 @@ header .menu-toggle {
     border-radius: 5px;
     background: white;
     position: relative;
+}
+
+.content .popular .post {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.content .popular .post img {
+    height: 60px;
+    width: 75px;
+    float: left;
+    margin-right: 10px;
 }
 
 .content .main-content .post .read-more {
@@ -263,9 +313,13 @@ header .menu-toggle {
 .content .sidebar {
     width: 30%;
     float: left;
-    height: 300px;
-    height: 300px;
+    border: 3px dashed green;
 }
+.content .sidebar.single {
+    padding: 0px 10px;
+
+}
+
 
 .content .sidebar .section {
     background: white;
@@ -301,6 +355,35 @@ header .menu-toggle {
     transition: all 0.3s;
 }
 /* Content */
+
+/* AUTH PAGES */
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form a {
+    text-decoration: underline;
+
+}
+
+
+/* AUTH PAGES */
 
 
 /* FOOTER.S */
@@ -382,6 +465,12 @@ header .menu-toggle {
     background: #1a1a1a;
 }
 
+.footer .footer-content .contact-from .contact-btn {
+    font-size: 1.1em;
+    font-family: 'Lora', serif;
+
+}
+
 .footer .footer-bottom {
     background: #343a40;
     color: #686868;
@@ -392,15 +481,19 @@ header .menu-toggle {
     bottom: 0px;
     left: 0px;
     padding-top: 20px;
-
-
 }
-
-
 /* FOOTER.E */
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 667px) {
+    .content {
+        width: 100%;
+
+    }
+}
+
+
+@media only screen and (max-width: 967px) {
     header {
         position: relative;
     }

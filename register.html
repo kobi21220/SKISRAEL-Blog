@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/84a0fbe814.js"></script>
+
+    <!-- Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Custom Styling-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <!--logo-->
+      <a href="index.html" class="logo"><img class="logo-img" src="/images/Skisrael-logo.png"
+        alt="Skisrael logo" /></a>
+      </div>
+      <!--logo-->
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li><a href="#">מזג האוויר</a></li>
+        <li><a href="#">מדריכים</a></li>
+        <li><a href="#">ציוד וביגוד</a></li>
+        <li><a href="#">אתרי סקי</a></li>
+        <li><a href="#">דף הבית</a></li>
+        <!-- <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li> -->
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+            Kobi Rahamim
+            <i class="fa fa-chevron-down" style="font-size: 0.8em"></i>
+          </a>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <div class="auth-content">
+
+      <form action="register.html" method="post">
+        <h2 class="form-title">Register</h2>
+
+        <!-- <div class="msg error">
+          <li>Username required</li>
+        </div> -->
+
+        <div>
+          <label>Username</label>
+          <input type="text" name="username" id="" class="text-input">
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" id="" class="text-input">
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" name="password" id="" class="text-input">
+        </div>
+        <div>
+          <label>Password Confirmation</label>
+          <input type="password" name="passwordConf" id="" class="text-input">
+        </div>
+        <button type="submit" name="register-btn" class="btn btn-bog">Register</button>
+        <p>Or <a href="login.html">Sign In</a></p>
+      </form>
+
+
+    </div>
+
+
+    <!-- JQury-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+    <!-- Custom Script-->
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
